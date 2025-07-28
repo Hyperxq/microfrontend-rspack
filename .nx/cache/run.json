@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "cli run start --scope=@mf-mr/*",
+    "startTime": "2025-07-27T17:32:22.986Z",
+    "endTime": "2025-07-27T17:32:23.816Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@mf-mr/ui-components:start",
+      "target": "start",
+      "projectName": "@mf-mr/ui-components",
+      "hash": "15849086242441156676",
+      "startTime": "2025-07-27T17:32:23.025Z",
+      "endTime": "2025-07-27T17:32:23.814Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "@mf-mr/shell:start",
+      "target": "start",
+      "projectName": "@mf-mr/shell",
+      "hash": "9568284648246859019",
+      "startTime": "2025-07-27T17:32:23.025Z",
+      "endTime": "2025-07-27T17:32:23.816Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

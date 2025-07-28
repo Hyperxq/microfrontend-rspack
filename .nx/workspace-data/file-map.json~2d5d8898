@@ -1,0 +1,145 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "@mf-mr/ui-components": [
+        {
+          "file": "packages/libraries/ui-components/.gitignore",
+          "hash": "7428526608384850638"
+        },
+        {
+          "file": "packages/libraries/ui-components/README.md",
+          "hash": "14874552225395652373"
+        },
+        {
+          "file": "packages/libraries/ui-components/biome.json",
+          "hash": "16412760947439758412"
+        },
+        {
+          "file": "packages/libraries/ui-components/bun.lockb",
+          "hash": "9112059980298776415"
+        },
+        {
+          "file": "packages/libraries/ui-components/module-federation.config.ts",
+          "hash": "4943127392648039180"
+        },
+        {
+          "file": "packages/libraries/ui-components/package.json",
+          "hash": "3269459316948180073",
+          "deps": [
+            "npm:@biomejs/biome",
+            "npm:@rsbuild/core",
+            "npm:@rsbuild/plugin-react",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "packages/libraries/ui-components/rsbuild.config.ts",
+          "hash": "370299877341677037"
+        },
+        {
+          "file": "packages/libraries/ui-components/src/atoms/Button.tsx",
+          "hash": "6516443956361971861"
+        },
+        {
+          "file": "packages/libraries/ui-components/src/index.tsx",
+          "hash": "6516443956361971861"
+        },
+        {
+          "file": "packages/libraries/ui-components/tsconfig.json",
+          "hash": "10432034118008495208"
+        }
+      ],
+      "@mf-mr/shell": [
+        {
+          "file": "packages/shell/.gitignore",
+          "hash": "7428526608384850638"
+        },
+        {
+          "file": "packages/shell/README.md",
+          "hash": "14874552225395652373"
+        },
+        {
+          "file": "packages/shell/biome.json",
+          "hash": "17599379940464016044"
+        },
+        {
+          "file": "packages/shell/module-federation.config.ts",
+          "hash": "15413804343180706046"
+        },
+        {
+          "file": "packages/shell/module-federation.d.ts",
+          "hash": "12199342000525107168"
+        },
+        {
+          "file": "packages/shell/package.json",
+          "hash": "1054925539173052075",
+          "deps": [
+            "npm:@biomejs/biome",
+            "npm:@rsbuild/core",
+            "npm:@rsbuild/plugin-react",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:typescript",
+            "npm:@module-federation/enhanced"
+          ]
+        },
+        {
+          "file": "packages/shell/rsbuild.config.ts",
+          "hash": "11840916511784972113"
+        },
+        {
+          "file": "packages/shell/src/App.css",
+          "hash": "2649933002402860727"
+        },
+        {
+          "file": "packages/shell/src/App.tsx",
+          "hash": "1886183809314287010"
+        },
+        {
+          "file": "packages/shell/src/env.d.ts",
+          "hash": "15296451779803160889"
+        },
+        {
+          "file": "packages/shell/src/index.tsx",
+          "hash": "16066234945450685174"
+        },
+        {
+          "file": "packages/shell/tsconfig.json",
+          "hash": "4681655841332300138"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "8587836968507943632"
+      },
+      {
+        "file": "bun.lockb",
+        "hash": "7244600753167682521"
+      },
+      {
+        "file": "common.json",
+        "hash": "17580218841257959899"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "10307142885639291195"
+      },
+      {
+        "file": "nx.json",
+        "hash": "15753941481085060538"
+      },
+      {
+        "file": "package.json",
+        "hash": "10187289356324093746"
+      }
+    ]
+  }
+}

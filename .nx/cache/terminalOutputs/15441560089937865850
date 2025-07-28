@@ -1,0 +1,24 @@
+[0m[2m[35m$[0m [2m[1mrsbuild dev --open[0m
+[1m[38;2;189;255;243m [39m[38;2;189;255;243m [39m[38;2;181;251;237mR[39m[38;2;173;246;230ms[39m[38;2;164;242;224mb[39m[38;2;156;238;218mu[39m[38;2;148;233;211mi[39m[38;2;140;229;205ml[39m[38;2;131;224;198md[39m[38;2;131;224;198m [39m[38;2;123;220;192mv[39m[38;2;115;216;186m1[39m[38;2;107;211;179m.[39m[38;2;99;207;173m4[39m[38;2;90;203;167m.[39m[38;2;82;198;160m1[39m[38;2;74;194;154m1[39m[38;2;74;194;154m
+[39m[22m
+  ➜  [2mNetwork:  [22m[36mhttp://192.168.100.3:3000/[39m
+  ➜  [2mLocal:    [22m[36mhttp://localhost:3000/[39m
+  ➜  [2mNetwork:  [22m[36mhttp://172.21.224.1:3000/[39m
+  ➜  [2mpress[22m [1mh + enter[22m [2mto show shortcuts[22m
+
+[1m[31merror  [39m[22m Failed to start dev server.
+[1m[31merror  [39m[22m TypeError: object null is not iterable (cannot read property Symbol(Symbol.iterator))
+[90m    at D:\POCs\microfrontend-monorepo\node_modules\@rspack\core\dist\index.js:15848:57
+    at D:\POCs\microfrontend-monorepo\node_modules\@rspack\core\dist\index.js:15871:26
+    at ModuleFederationPlugin.apply (D:\POCs\microfrontend-monorepo\node_modules\@rspack\core\dist\index.js:15886:22)
+    at ModuleFederationPlugin.apply (D:\POCs\microfrontend-monorepo\node_modules\@module-federation\rspack\dist\plugin.cjs.js:190:80)
+    at createCompiler (D:\POCs\microfrontend-monorepo\node_modules\@rspack\core\dist\index.js:15996:179)
+    at create (D:\POCs\microfrontend-monorepo\node_modules\@rspack\core\dist\index.js:16022:28)
+    at D:\POCs\microfrontend-monorepo\node_modules\@rspack\core\dist\index.js:16040:39
+    at createCompiler_createCompiler (file:///D:/POCs/microfrontend-monorepo/node_modules/@rsbuild/core/dist/index.js:2652:113)
+    at async createCompiler (file:///D:/POCs/microfrontend-monorepo/node_modules/@rsbuild/core/dist/index.js:5475:37)
+    at async startCompile (file:///D:/POCs/microfrontend-monorepo/node_modules/@rsbuild/core/dist/index.js:5326:42)
+    at async devServer_createDevServer (file:///D:/POCs/microfrontend-monorepo/node_modules/@rsbuild/core/dist/index.js:5457:43)
+    at async Object.startDevServer (file:///D:/POCs/microfrontend-monorepo/node_modules/@rsbuild/core/dist/index.js:5499:21)
+    at async CAC.<anonymous> (file:///D:/POCs/microfrontend-monorepo/node_modules/@rsbuild/core/dist/index.js:7735:21)[39m
+[0m[31merror[0m[2m:[0m script [1m"dev"[0m exited with code 1[0m

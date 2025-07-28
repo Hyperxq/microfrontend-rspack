@@ -1,0 +1,25 @@
+{
+  "name": "mf-mr",
+  "version": "1.0.0",
+  "description": "This repo is an example for microfrontend with rspack and monorepo with lerna",
+  "scripts": {
+    "start": "lerna run dev --scope=@mf-mr/*",
+    "format": "lerna run format --scope=@mf-mr/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*",
+    "packages/libraries/*",
+    "packages/microfrontends/*"
+  ],
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@module-federation/rsbuild-plugin": "^0.17.1",
+    "@rspack/plugin-react-refresh": "^1.4.3",
+    "lerna": "^8.2.3"
+  }
+}
