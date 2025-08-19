@@ -1,1 +1,57 @@
-{}
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "extends": "nx/presets/npm.json",
+  "npmScope": "mf-mr",
+
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*",
+      "!{projectRoot}/dist/**",
+      "!{projectRoot}/build/**"
+    ],
+    "production": [
+      "default",
+      "!{projectRoot}/**/*.spec.*",
+      "!{projectRoot}/**/*.test.*",
+      "!{projectRoot}/**/*.stories.*"
+    ]
+  },
+
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  },
+
+  "projects": {
+    "shell": {
+      "implicitDependencies": [
+        "@mf-mr/hero",
+        "@mf-mr/features",
+        "@mf-mr/pricing",
+        "@mf-mr/testimonials",
+        "@mf-mr/footer",
+        "@mf-mr/ui-components"
+      ]
+    },
+
+    "@mf-mr/hero": {
+      "implicitDependencies": ["@mf-mr/ui-components"]
+    },
+    "@mf-mr/features": {
+      "implicitDependencies": ["@mf-mr/ui-components"]
+    },
+    "@mf-mr/pricing": {
+      "implicitDependencies": ["@mf-mr/ui-components"]
+    },
+    "@mf-mr/testimonials": {
+      "implicitDependencies": ["@mf-mr/ui-components"]
+    },
+    "@mf-mr/footer": {
+      "implicitDependencies": ["@mf-mr/ui-components"]
+    },
+
+    "@mf-mr/ui-components": {}
+  }
+}

@@ -4,10 +4,10 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-    "start": "rspack serve",
+		"start": "rsbuild serve",
 		"build": "rsbuild build",
-		"check": "biome check --write",
 		"dev": "rsbuild dev --open",
+		"check": "biome check --write",
 		"format": "biome format --write",
 		"preview": "rsbuild preview"
 	},

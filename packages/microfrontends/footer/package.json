@@ -1,0 +1,14 @@
+{
+	"name": "@mf-mr/footer",
+	"private": true,
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "rsbuild dev",
+		"build": "rsbuild build",
+		"format": "biome format --write",
+		"check": "biome check --write",
+		"preview": "rsbuild preview"
+	},
+	"dependencies": {},
+	"devDependencies": {}
+}

@@ -4,7 +4,9 @@
   "description": "This repo is an example for microfrontend with rspack and monorepo with lerna",
   "scripts": {
     "start": "lerna run dev --scope=@mf-mr/*",
-    "format": "lerna run format --scope=@mf-mr/*"
+    "build": "lerna run build --scope=@mf-mr/*",
+    "format": "lerna run format --scope=@mf-mr/*",
+    "check": "lerna run check --scope=@mf-mr/*"
   },
   "author": "",
   "license": "ISC",
@@ -14,12 +16,31 @@
     "packages/microfrontends/*"
   ],
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.540.0",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.1.1",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.12",
+    "tw-animate-css": "^1.3.7"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.0.6",
     "@module-federation/rsbuild-plugin": "^0.17.1",
+    "@rsbuild/core": "^1.4.3",
+    "@rsbuild/plugin-react": "^1.3.3",
+    "@rsbuild/plugin-sass": "^1.3.3",
+    "@testing-library/react": "16.3.0",
     "@rspack/plugin-react-refresh": "^1.4.3",
-    "lerna": "^8.2.3"
+    "@types/react-dom": "^19.1.6",
+    "@types/react": "^19.1.8",
+    "lerna": "^8.2.3",
+    "react-refresh": "^0.17.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }

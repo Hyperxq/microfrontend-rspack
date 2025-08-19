@@ -1,0 +1,157 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "@mf-mr/ui-components",
+  "type": "registry:ui",
+  "dependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "@radix-ui/react-*": "*",
+    "tailwindcss": "*"
+  },
+  "registry": [
+    {
+      "name": "button",
+      "entries": {
+        "light": "./dist/button.js",
+        "standalone": "./dist/button.standalone.js",
+        "types": "./dist/types/button.d.ts"
+      }
+    },
+    {
+      "name": "card",
+      "entries": {
+        "light": "./dist/card.js",
+        "standalone": "./dist/card.standalone.js",
+        "types": "./dist/types/card.d.ts"
+      }
+    },
+    {
+      "name": "tabs",
+      "entries": {
+        "light": "./dist/tabs.js",
+        "standalone": "./dist/tabs.standalone.js",
+        "types": "./dist/types/tabs.d.ts"
+      }
+    },
+    {
+      "name": "toggle",
+      "entries": {
+        "light": "./dist/toggle.js",
+        "standalone": "./dist/toggle.standalone.js",
+        "types": "./dist/types/toggle.d.ts"
+      }
+    },
+    {
+      "name": "badge",
+      "entries": {
+        "light": "./dist/badge.js",
+        "standalone": "./dist/badge.standalone.js",
+        "types": "./dist/types/badge.d.ts"
+      }
+    },
+    {
+      "name": "navigation-menu",
+      "entries": {
+        "light": "./dist/navigation-menu.js",
+        "standalone": "./dist/navigation-menu.standalone.js",
+        "types": "./dist/types/navigation-menu.d.ts"
+      }
+    },
+    {
+      "name": "dropdown-menu",
+      "entries": {
+        "light": "./dist/dropdown-menu.js",
+        "standalone": "./dist/dropdown-menu.standalone.js",
+        "types": "./dist/types/dropdown-menu.d.ts"
+      }
+    },
+    {
+      "name": "accordion",
+      "entries": {
+        "light": "./dist/accordion.js",
+        "standalone": "./dist/accordion.standalone.js",
+        "types": "./dist/types/accordion.d.ts"
+      }
+    },
+    {
+      "name": "tooltip",
+      "entries": {
+        "light": "./dist/tooltip.js",
+        "standalone": "./dist/tooltip.standalone.js",
+        "types": "./dist/types/tooltip.d.ts"
+      }
+    },
+    {
+      "name": "switch",
+      "entries": {
+        "light": "./dist/switch.js",
+        "standalone": "./dist/switch.standalone.js",
+        "types": "./dist/types/switch.d.ts"
+      }
+    },
+    {
+      "name": "avatar",
+      "entries": {
+        "light": "./dist/avatar.js",
+        "standalone": "./dist/avatar.standalone.js",
+        "types": "./dist/types/avatar.d.ts"
+      }
+    },
+    {
+      "name": "input",
+      "entries": {
+        "light": "./dist/input.js",
+        "standalone": "./dist/input.standalone.js",
+        "types": "./dist/types/input.d.ts"
+      }
+    },
+    {
+      "name": "label",
+      "entries": {
+        "light": "./dist/label.js",
+        "standalone": "./dist/label.standalone.js",
+        "types": "./dist/types/label.d.ts"
+      }
+    },
+    {
+      "name": "form",
+      "entries": {
+        "light": "./dist/form.js",
+        "standalone": "./dist/form.standalone.js",
+        "types": "./dist/types/form.d.ts"
+      }
+    },
+    {
+      "name": "alert",
+      "entries": {
+        "light": "./dist/alert.js",
+        "standalone": "./dist/alert.standalone.js",
+        "types": "./dist/types/alert.d.ts"
+      }
+    },
+    {
+      "name": "dialog",
+      "entries": {
+        "light": "./dist/dialog.js",
+        "standalone": "./dist/dialog.standalone.js",
+        "types": "./dist/types/dialog.d.ts"
+      }
+    },
+    {
+      "name": "toast",
+      "entries": {
+        "light": "./dist/toast.js",
+        "standalone": "./dist/toast.standalone.js",
+        "types": "./dist/types/toast.d.ts"
+      }
+    },
+    {
+      "name": "popover",
+      "entries": {
+        "light": "./dist/popover.js",
+        "standalone": "./dist/popover.standalone.js",
+        "types": "./dist/types/popover.d.ts"
+      }
+    }
+  ]
+}
