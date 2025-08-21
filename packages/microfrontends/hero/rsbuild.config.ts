@@ -7,18 +7,22 @@ import mfConfig from "./module-federation.config";
 export default defineConfig({
 	server: {
 		port: 3004,
-		compress: true
+		compress: true,
+		cors: {
+			origin: [
+				/^https?:\/\/(?:(?:[^:]+\.)?localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/,
+			]
+		}
 	},
 	dev: {
 		liveReload: true,
-		writeToDisk: true,
 	},
 	tools: {
 		htmlPlugin: false,
 	},
 	source: {
 		entry: {
-			app: "./src/App.tsx",
+			app: "./src/Hero.tsx",
 		},
 	},
 	output: {

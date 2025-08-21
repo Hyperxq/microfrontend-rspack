@@ -1,10 +1,10 @@
 import { createModuleFederationConfig } from '@module-federation/rsbuild-plugin';
 
 export default createModuleFederationConfig({
-  name: "hero",
+  name: "Hero",
   filename: "hero.js",
   exposes: {
-    "./hero": "./src/App.tsx",
+    "./Hero": "./src/Hero.tsx",
   },
   shared: {
     react: {

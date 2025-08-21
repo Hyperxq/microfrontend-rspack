@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This repo is an example for microfrontend with rspack and monorepo with lerna",
   "scripts": {
-    "start": "lerna run dev --scope=@mf-mr/*",
+    "start": "lerna run dev",
     "build": "lerna run build --scope=@mf-mr/*",
     "format": "lerna run format --scope=@mf-mr/*",
     "check": "lerna run check --scope=@mf-mr/*"

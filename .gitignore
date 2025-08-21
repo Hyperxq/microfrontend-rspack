@@ -1,2 +1,11 @@
 node_modules/
 .nx/
+dist/
+
+**/dist/**/**
+**/packages/**/**/dist/**
+packages/**/**/@mf-types/**
+packages/**/@mf-types
+packages/**/.mf
+packages/shell/@mf-types/
+packages/shell/.mf

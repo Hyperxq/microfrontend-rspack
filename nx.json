@@ -21,6 +21,10 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
+    },
+    "dev": {
+      "dependsOn": ["^dev"],
+      "cache": false
     }
   },
 
@@ -33,7 +37,24 @@
         "@mf-mr/testimonials",
         "@mf-mr/footer",
         "@mf-mr/ui-components"
-      ]
+      ],
+      "targets": {
+        "dev": {
+          "executor": "nx:run-commands",
+          "options": {
+            "commands": [
+              { "command": "nx dev @mf-mr/ui-components", "readyWhen": "built in" },
+              { "command": "nx dev @mf-mr/hero", "readyWhen": "built in" },
+              { "command": "nx dev @mf-mr/features", "readyWhen": "built in" },
+              { "command": "nx dev @mf-mr/pricing", "readyWhen": "built in" },
+              { "command": "nx dev @mf-mr/testimonials", "readyWhen": "built in" },
+              { "command": "nx dev @mf-mr/footer", "readyWhen": "built in" },
+              { "command": "nx dev shell" }
+            ],
+            "parallel": true
+          }
+        }
+      }
     },
 
     "@mf-mr/hero": {
@@ -51,7 +72,6 @@
     "@mf-mr/footer": {
       "implicitDependencies": ["@mf-mr/ui-components"]
     },
-
     "@mf-mr/ui-components": {}
   }
 }

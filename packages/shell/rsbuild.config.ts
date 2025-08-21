@@ -6,6 +6,11 @@ import mfConfig from "./module-federation.config";
 export default defineConfig({
 	server: {
 		port: 3001,
+		cors: {
+			origin: [
+				/^https?:\/\/(?:(?:[^:]+\.)?localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/,
+			]
+		}
 	},
 	source: {
 		entry: {
@@ -14,11 +19,6 @@ export default defineConfig({
 	},
 	dev: {
 		liveReload: true,
-	},
-	output: {
-		distPath: {
-			root: "../../dist/shell",
-		},
 	},
 	plugins: [pluginReact(), pluginModuleFederation(mfConfig)],
 	tools: {

@@ -4,11 +4,11 @@ import { createModuleFederationConfig } from "@module-federation/rsbuild-plugin"
 export default createModuleFederationConfig({
 	name: "host",
 	remotes: {
-		features: "features@http://localhost:3002/features.js",
-		footer: "footer@http://localhost:3003/footer.js",
-		hero: "hero@http://localhost:3004/hero.js",
-		pricing: "pricing@http://localhost:3005/pricing.js",
-		testimonials: "testimonials@http://localhost:3006/testimonials.js",
+		Features: "Features@http://localhost:3002/features.js",
+		Footer: "footer@http://localhost:3003/footer.js",
+		Hero: "Hero@http://localhost:3004/hero.js",
+		Pricing: "pricing@http://localhost:3005/pricing.js",
+		Testimonials: "testimonials@http://localhost:3006/testimonials.js",
 	},
 	dts: {
 		consumeTypes: {
@@ -17,28 +17,28 @@ export default createModuleFederationConfig({
 					(resolve) => {
 						setTimeout(() => {
 							resolve({
-								features: {
-									alias: "features",
+								Features: {
+									alias: "Features",
 									api: "http://localhost:3002/@mf-types.d.ts",
 									zip: "http://localhost:3002/@mf-types.zip",
 								},
-								footer: {
-									alias: "footer",
+								Footer: {
+									alias: "Footer",
 									api: "http://localhost:3003/@mf-types.d.ts",
 									zip: "http://localhost:3003/@mf-types.zip",
 								},
-								hero: {
-									alias: "hero",
+								Hero: {
+									alias: "Hero",
 									api: "http://localhost:3004/@mf-types.d.ts",
 									zip: "http://localhost:3004/@mf-types.zip",
 								},
-								pricing: {
-									alias: "pricing",
+								Pricing: {
+									alias: "Pricing",
 									api: "http://localhost:3005/@mf-types.d.ts",
 									zip: "http://localhost:3005/@mf-types.zip",
 								},
-								testimonials: {
-									alias: "testimonials",
+								Testimonials: {
+									alias: "Testimonials",
 									api: "http://localhost:3006/@mf-types.d.ts",
 									zip: "http://localhost:3006/@mf-types.zip",
 								},
